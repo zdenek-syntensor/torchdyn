@@ -113,7 +113,7 @@ class MultipleShootingProblem(ODEProblem):
         """An ODE problem solved with parallel-in-time methods.
         Args:
             vector_field (Callable):  the vector field, called with `vector_field(t, x)` for `vector_field(x)`.
-                                    In the second case, the Callable is automatically wrapped for consistency
+            In the second case, the Callable is automatically wrapped for consistency
             solver (str): parallel-in-time solver.
             sensitivity (str, optional): . Defaults to 'autograd'.
             solver_adjoint (Union[str, nn.Module, None], optional): . Defaults to None.

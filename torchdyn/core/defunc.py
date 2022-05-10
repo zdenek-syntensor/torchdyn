@@ -35,8 +35,8 @@ class DEFuncBase(nn.Module):
 
 class DEFunc(nn.Module):
     def __init__(self, vector_field:Callable, order:int=1):
-        """Special vector field wrapper for Neural ODEs. 
-        
+        """Special vector field wrapper for Neural ODEs.
+
         Handles auxiliary tasks: time ("depth") concatenation, higher-order dynamics and forward propagated integral losses.
 
         Args:
@@ -47,7 +47,7 @@ class DEFunc(nn.Module):
             Currently handles the following:
             (1) assigns time tensor to each submodule requiring it (e.g. `GalLinear`). 
             (2) in case of integral losses + reverse-mode differentiation, propagates the loss in the first dimension of `x`
-                and automatically splits the Tensor into `x[:, 0]` and `x[:, 1:]` for vector field computation
+            and automatically splits the Tensor into `x[:, 0]` and `x[:, 1:]` for vector field computation
             (3) in case of higher-order dynamics, adjusts the vector field forward to recursively compute various orders.
         """
         super().__init__()
