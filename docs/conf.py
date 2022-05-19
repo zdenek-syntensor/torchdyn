@@ -82,25 +82,12 @@ nbsphinx_execute = 'never'
 nbsphinx_prolog = r"""
 {% set docname = 'docs/' + env.doc2path(env.docname, base=None) %}
 .. only:: html
-    .. role:: raw-html(raw)
-        :format: html
-    .. nbinfo::
+
+	.. role:: raw-html(raw)
+	   :format: html
         Interactive online version:
-        :raw-html:`<a href="https://colab.research.google.com/github/google/jax/blob/master/{{ docname }}"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" style="vertical-align:text-bottom"></a>`
-    __ https://github.com/google/jax/blob/
-        {{ env.config.release }}/{{ docname }}
+        :raw-html:`<a class="colab" href="https://colab.research.google.com/github/DiffEqML/torchdyn/blob/master/{{ docname }}"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" style="vertical-align:text-bottom"></a>`
 """
-
-
-
-
-
-
-
-
-
-
-
 
 # -- Options for HTML output -------------------------------------------------
 
