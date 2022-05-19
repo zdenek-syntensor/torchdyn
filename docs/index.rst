@@ -41,5 +41,9 @@ A set of extended tutorials, covering everything from models, benchmarks and num
    :maxdepth: 1
    :caption: API documentation
 
-   source/torchdyn
-
+   source/torchdyn.core
+   source/torchdyn.datasets
+   source/torchdyn.models
+   source/torchdyn.nn
+   source/torchdyn.numerics
+   source/torchdyn.utils

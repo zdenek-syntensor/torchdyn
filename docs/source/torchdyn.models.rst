@@ -17,6 +17,3 @@ torchdyn.models.energy module
 
 .. automodule:: torchdyn.models.energy
    :members:
-
-
-
