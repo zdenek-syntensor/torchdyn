@@ -148,3 +148,6 @@ poetry.lock
 
 # locally run notebooks via papermill
 local_nbrun*
+
+# ignore mac/osx metedata
+.DS_Store
