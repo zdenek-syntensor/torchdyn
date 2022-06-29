@@ -1,4 +1,4 @@
-NeuralDE
+Neural Differential Equations
 ====================================
 
 .. toctree::
@@ -10,7 +10,7 @@ NeuralDE
    module1-neuralde/m1c_augmentation_strategies
    module1-neuralde/m1d_higher_order
 
-Numerics
+Numerics and Optimization
 ====================================
 
 .. toctree::
@@ -21,7 +21,7 @@ Numerics
    module2-numerics/m2c_hybrid_odeint
    module2-numerics/m2d_generalized_adjoint
 
-Tasks
+Tasks and Benchmarks
 ====================================
 
 .. toctree::
@@ -31,7 +31,7 @@ Tasks
    module3-tasks/m3b_optimal_control
    module3-tasks/m3c_continuous_normalizing_flows
    
-Model
+Models
 ====================================
 
 .. toctree::
