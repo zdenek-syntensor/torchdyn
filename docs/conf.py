@@ -102,7 +102,7 @@ nbsphinx_prolog = r"""
 #     'display_version': False,
 # }
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'torchdyn_sphinx_theme'
 html_theme_options = {
 	'logo': '_static/torchdyn_logo.svg',
 }
