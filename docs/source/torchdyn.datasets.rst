@@ -6,5 +6,5 @@ Utilities to generate data necessary for various tasks
 Module contents
 ---------------
 
-.. automodule:: torchdyn.datasets
+.. automodule:: torchdyn.datasets.static_datasets
    :members:

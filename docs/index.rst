@@ -29,16 +29,15 @@ A set of extended tutorials, covering everything from models, benchmarks and num
 
    tutorials/quickstart
    
+.. toctree::
+   :maxdepth: 2
+   :caption: All tutorials
+   :numbered:
+   
+   tutorials/index 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: General Information
-
-   contributing
-   FAQ
-
-.. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: API documentation
 
    source/torchdyn.core
