@@ -106,7 +106,6 @@ html_theme = 'torchdyn_sphinx_theme'
 html_theme_options = {
 	'logo': '_static/torchdyn_logo.svg',
 }
-html_theme_path = ['../../torchdyn_sphinx_theme']
 
 # # Add any paths that contain custom static files (such as style sheets) here,
 # # relative to this directory. They are copied after the builtin static files,
