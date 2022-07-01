@@ -95,13 +95,6 @@ nbsphinx_prolog = r"""
 # a list of builtin themes.
 #
 
-# html_theme = "sphinx_rtd_theme"
-# html_logo = '_static/torchdyn_logo.png'
-# html_theme_options = {
-#     'logo_only': True,
-#     'display_version': False,
-# }
-
 html_theme = 'torchdyn_sphinx_theme'
 html_theme_options = {
 	'logo': '_static/torchdyn_logo.svg',
