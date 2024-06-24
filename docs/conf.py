@@ -35,7 +35,8 @@ extensions = [
 	'sphinx.ext.autodoc', 'sphinx_autodoc_typehints', 'sphinx.ext.coverage', 'sphinx.ext.napoleon',
 	'myst_parser',
 	'nbsphinx',
-	'sphinx.ext.viewcode'
+	'sphinx.ext.viewcode',
+    #'pt_lightning_sphinx_theme.extensions.lightning',
 ]
 
 # Napoleon settings
@@ -81,41 +82,25 @@ nbsphinx_execute = 'never'
 nbsphinx_prolog = r"""
 {% set docname = 'docs/' + env.doc2path(env.docname, base=None) %}
 .. only:: html
-    .. role:: raw-html(raw)
-        :format: html
-    .. nbinfo::
+
+	.. role:: raw-html(raw)
+	   :format: html
         Interactive online version:
-        :raw-html:`<a href="https://colab.research.google.com/github/google/jax/blob/master/{{ docname }}"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" style="vertical-align:text-bottom"></a>`
-    __ https://github.com/google/jax/blob/
-        {{ env.config.release }}/{{ docname }}
+        :raw-html:`<a class="colab" href="https://colab.research.google.com/github/DiffEqML/torchdyn/blob/master/{{ docname }}"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" style="vertical-align:text-bottom"></a>`
 """
-
-
-
-
-
-
-
-
-
-
-
 
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-#html_theme = 'alabaster'
 
-html_theme = "sphinx_rtd_theme"
-html_logo = '_static/torchdyn_logo.png'
+html_theme = 'torchdyn_sphinx_theme'
 html_theme_options = {
-    'logo_only': True,
-    'display_version': False,
+	'logo': '_static/torchdyn_logo.svg',
 }
 
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
+# # Add any paths that contain custom static files (such as style sheets) here,
+# # relative to this directory. They are copied after the builtin static files,
+# # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
